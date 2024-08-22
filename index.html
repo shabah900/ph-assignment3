@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+         <!-- cdn for daisyUI    -->
+         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+         <script src="https://cdn.tailwindcss.com"></script>
     <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
     <link rel="stylesheet" href="style.css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 clifford: '#da373d',
+                fontFamily: {
+                  manrope: ["Manrope",'sans-serif'],
+                }
               }
             }
           }
@@ -21,7 +31,7 @@
       </script>
 
 </head>
-<body>
+<body class="font-manrope">
     <header>
 
     </header>
@@ -54,12 +64,12 @@
     </div>
 </div>
 <div class="mx-auto w-3/4 grid place-items-center">
-    <img class="mx-auto" src="assets/banner.png" alt="">
-    <h2 class="text-center">A barn house of this design has a striking appearance</h2>
-    <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-    <button class="">
-        <p>View Details</p>
-        <div></div>
+    <img  class="mx-auto w-[570px] h-[350px]" src="assets/banner.png" alt="">
+    <h2 class=" text-center font-extrabold text-6xl w-[1080px] text-[#212121]">A barn house of this design has a striking appearance</h2>
+    <p class="text-center text-base font-medium text-[#494949] py-2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+    <button class="flex w-52 h-14 bg-[#ABEF5F80] justify-center rounded-2xl py-3 gap-2" >
+        <p class="text-xl font-bold text-[#212121]">View Details</p>
+        <div class="w-8 h-8 rounded-full bg-[#ABEF5F] " ><img  class="object-center w-[28px] h-[28px] rounded-full" src="assets/arrow-right-top-black.png" alt=""></div>
     </button>
 </div>
 
